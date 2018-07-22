@@ -1,0 +1,9 @@
+body {
+    background-color: #f2f2f2;
+    color: #222;
+    font-family: sans-serif;
+}
+.task-wrapper {
+    border: #222 solid 2px;
+    padding: 10px;
+}
