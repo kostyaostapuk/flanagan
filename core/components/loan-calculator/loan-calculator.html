@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loan Calculator Component</title>
+
+    <link rel="stylesheet" href="loan-calculator.css">
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Enter loan data</th>
+            <td></td>
+            <th>Loan Balance, Cumulative Equity, and Interest Payments</th>
+        </tr>
+        <tr>
+            <td>Amount of the loan ($):</td>
+            <td>
+                <input id="amount" onchange="calculate()">
+            </td>
+            <td rowspan="8">
+                <canvas id="graph" height="250" width="400"></canvas>
+            </td>
+        </tr>
+        <tr>
+            <td>Annual interest (%):</td>
+            <td>
+                <input id="apr" onchange="calculate()">
+            </td>
+            <td></td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td rowspan="4">1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>text</td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td rowspan="4">td 1</td>
+
+        </tr>
+        <tr>
+            <td>td 2</td>
+            <td>td 3</td>
+            <td>td 4</td>
+        </tr>
+    </table>
+</body>
+
+</html>
