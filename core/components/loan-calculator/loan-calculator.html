@@ -32,33 +32,53 @@
             <td>
                 <input id="apr" onchange="calculate()">
             </td>
-            <td></td>
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr>
-            <td rowspan="4">1</td>
-            <td>1</td>
         </tr>
         <tr>
-            <td>2</td>
-            <td>2</td>
+            <td>Repayment period (year):</td>
+            <td>
+                <input id="years" onchange="calculate()">
+            </td>
         </tr>
         <tr>
-            <td>text</td>
-        </tr>
-        <tr></tr>
-        <tr>
-            <td rowspan="4">td 1</td>
-
+            <td>Zipcode (to find lenders):</td>
+            <td>
+                <input id="zipcode" onchange="calculate()">
+            </td>
         </tr>
         <tr>
-            <td>td 2</td>
-            <td>td 3</td>
-            <td>td 4</td>
+            <th>Approximate Payments:</th>
+            <td>
+                <button onclick="calculate()">Calculate</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Monthly payment:</td>
+            <td>$
+                <span class="output" id="payment"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Total payment:</td>
+            <td>$
+                <span class="output" id="total"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Total interest:</td>
+            <td>$
+                <span class="output" id="totalinterest"></span>
+            </td>
+        </tr>
+        <tr>
+            <th>Sponsors:</th>
+            <td colspan=2>
+                Apply for your loan with one of these fine lenders
+                <div id="lenders"></div>
+            </td>
         </tr>
     </table>
+
+    <script src="loan-calculator.js"></script>
 </body>
 
 </html>
